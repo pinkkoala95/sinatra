@@ -14,11 +14,11 @@ The remit of this task was to:
 To manage our gems we used Bundler.
 
 Initialize bundler using:
-bundle init
-bundle install --path vendor/bundle
+ - bundle init
+ - bundle install --path vendor/bundle
 
 Then the gems we need are:
-bundle add sinatra
-bundle add rspec
-bundle add rack-test
+ - bundle add sinatra
+ - bundle add rspec
+ - bundle add rack-test
 
