@@ -3,7 +3,7 @@
 The remit of this task was to:
  - Create and run a web server with Sinatra (https://sinatrarb.com/intro.html)
  - Check the page is shown in the browser
- - Write an automated test for the page
+ - Write an automated test for the page (https://sinatrarb.com/testing.html)
  - Create a second page using TDD
  - Show a picture of a Llama on the page. 
 
