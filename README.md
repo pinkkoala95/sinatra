@@ -1,4 +1,5 @@
 **Task Guidance**
+
 The remit of this task was to:
  - Create and run a web server with Sinatra (https://sinatrarb.com/intro.html)
  - Check the page is shown in the browser
@@ -9,6 +10,7 @@ The remit of this task was to:
 ![Llama](https://birdsofpreycentre.co.uk/wp-content/uploads/2021/05/PHOTO-2021-05-04-14-10-14-1.jpg)
 
 **Technical Guidance**
+
 To manage our gems we used Bundler.
 
 Initialize bundler using:
