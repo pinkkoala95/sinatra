@@ -1,6 +1,4 @@
 **Task Guidance**
-1
-The remit of this task was to:
  - Create and run a web server with Sinatra (https://sinatrarb.com/intro.html)
  - Check the page is shown in the browser
  - Write an automated test for the page (https://sinatrarb.com/testing.html)
@@ -24,4 +22,11 @@ Then the gems we need are:
  - bundle add sinatra
  - bundle add rspec
  - bundle add rack-test
+
+ For the GDS elements:
+ - I downloaded the release-<4.3.1>.zip file at the bottom of the latest GOV.UK Frontend release note.
+ - Copied the assets folder to the root of my project’s public folder
+ - Copied the 2 .css files to a stylesheets folder in the root of the public folder.
+ - Copied the .js file to a JavaScript folder in the root of the project’s public folder
+ - Made sure all of the links in my .erb files were going to the correct location.
 
