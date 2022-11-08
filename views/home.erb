@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>GOV.UK - The best place to find government services and information</title>
+  <title>GOV.UK - Llamaland</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0b0c0c">
 
@@ -25,16 +25,80 @@
   <![endif]-->
 
   <!--[if lt IE 9]>
-    <script src="public/stylesheets/govuk-frontend-ie8-4.3.1.min.css"></script>
+    <script src="/stylesheets/govuk-frontend-ie8-4.3.1.min.css"></script>
   <![endif]-->
 
 </head>
 
 <body class="govuk-template__body ">
   <script>
-    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+    document.body.className = ((document.body.className) ? document.body.className + "js-enabled" : "js-enabled");
 
   </script>
+    <form method="POST">
+    <div class="govuk-cookie-banner " data-nosnippet role="region" aria-label="Cookies on [name of service]">
+      <div class="govuk-cookie-banner__message govuk-width-container">
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-cookie-banner__heading govuk-heading-m">Cookies on Llamaland</h2>
+
+            <div class="govuk-cookie-banner__content">
+              <p class="govuk-body">We use some essential cookies to make this service work.</p>
+              <p class="govuk-body">We’d like to set additional cookies so we can remember your settings, understand how people use the service and make improvements.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="govuk-button-group">
+          <button value="accept" type="submit" name="cookies" class="govuk-button" data-module="govuk-button">
+            Accept additional cookies
+          </button>
+          <button value="reject" type="submit" name="cookies" class="govuk-button" data-module="govuk-button">
+            Reject additional cookies
+          </button>
+          <a class="govuk-link" href="#">View cookies</a>
+        </div>
+      </div>
+
+      <div class="govuk-cookie-banner__message govuk-width-container" hidden>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+
+            <div class="govuk-cookie-banner__content">
+              <p class="govuk-body">You’ve accepted additional cookies. You can <a class="govuk-link" href="#">change your cookie settings</a> at any time.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="govuk-button-group">
+          <a href="#" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+            Hide cookie message
+          </a>
+        </div>
+      </div>
+
+      <div class="govuk-cookie-banner__message govuk-width-container" hidden>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+
+            <div class="govuk-cookie-banner__content">
+              <p class="govuk-body">You’ve rejected additional cookies. You can <a class="govuk-link" href="#">change your cookie settings</a> at any time.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="govuk-button-group">
+          <a href="#" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+            Hide cookie message
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </form>
 
   <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
@@ -59,7 +123,16 @@
       </div>
     </div>
   </header>
-
+  <div class="govuk-phase-banner govuk-width-container ">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        alpha
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
   <div class="govuk-width-container ">
     <main class="govuk-main-wrapper " id="main-content" role="main">
       <h1 class="govuk-heading-xl">Llama's are great!</h1>
@@ -89,7 +162,7 @@
     </div>
   </footer>
 
-  <script src="/govuk-frontend/all.js"></script>
+  <script src="/govuk-frontend-4.3.1.min.js"></script>
   <script>
     window.GOVUKFrontend.initAll()
 
