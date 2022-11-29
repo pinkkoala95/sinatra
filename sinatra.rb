@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'rspec'
 require 'rack/test'
+set :run, false
 set :port, 5500
 
 
