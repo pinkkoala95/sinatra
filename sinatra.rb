@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'rspec'
 require 'rack/test'
-set :port, 5753
+set :port, $PORT
 
 
 get '/' do
