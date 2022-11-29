@@ -56,10 +56,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  capybara
   rack-test (~> 2.0)
   rspec (~> 3.12)
   sinatra (~> 3.0)
+
+RUBY VERSION
+   ruby 2.6.10p210
 
 BUNDLED WITH
    1.17.2
