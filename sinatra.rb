@@ -1,8 +1,8 @@
 require 'sinatra'
 require 'rspec'
 require 'rack/test'
-set :run, false
-set :port, 5500
+# set :run, false
+# set :port, 5500
 
 
 get '/' do
