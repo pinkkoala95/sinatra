@@ -25,16 +25,17 @@
   <![endif]-->
 
   <!--[if lt IE 9]>
-    <script src="/stylesheets/govuk-frontend-ie8-4.3.1.min.css"></script>
+    <script src="public/stylesheets/govuk-frontend-ie8-4.3.1.min.css"></script>
   <![endif]-->
 
 </head>
 
 <body class="govuk-template__body ">
   <script>
-    document.body.className = ((document.body.className) ? document.body.className + "js-enabled" : "js-enabled");
+    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
 
   </script>
+
   <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
   <header class="govuk-header " role="banner" data-module="govuk-header">
@@ -64,31 +65,45 @@
     </div>
   </header>
 
-  <div class="govuk-phase-banner govuk-width-container ">
-    <p class="govuk-phase-banner__content">
-      <strong class="govuk-tag govuk-phase-banner__content__tag">
-        alpha
-      </strong>
-      <span class="govuk-phase-banner__text">
-        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
-      </span>
-    </p>
-  </div>
   <div class="govuk-width-container ">
-    <main class="govuk-main-wrapper " id="main-content" role="main">
-      <h1 class="govuk-heading-xl">Building Identification Service</h1>
-      <p class="govuk-body">Information about the service goes here</p>
-      <a href="/info" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
-          Start now
-      <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
-      <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
-      </svg></a>
-    </main>
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <h1 class="govuk-fieldset__heading">
+          Which area do you want to search?
+        </h1>
+      </legend>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="coord-1">
+          Left Coordinate
+        </label>
+        <input class="govuk-input" id="coord-1" name="coord-1" type="text" autocomplete="address-line1">
+      </div>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="coord-2">
+          Bottom Coordinate
+        </label>
+        <input class="govuk-input" id="coord-2" name="coord-2" type="text" autocomplete="address-line2">
+      </div>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="coord-3">
+          Right Coordinate
+        </label>
+        <input class="govuk-input" id="coord-3" name="coord-3" type="text" autocomplete="address-line2">
+      </div>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="coord-4">
+          Top Coordinate
+        </label>
+        <input class="govuk-input" id="coord-4" name="coord-4" type="text" autocomplete="address-line2">
+      </div>
+    </fieldset
   </div>
+  <a href="/results"><button class="govuk-button" data-module="govuk-button">
+      Submit
+  </button></a>
 
   <footer class="govuk-footer " role="contentinfo">
-    <div class="govuk-width-container ">
-      <div class="govuk-footer__meta">
+        <div class="govuk-footer__meta">
         <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
 
           <svg aria-hidden="true" focusable="false" class="govuk-footer__licence-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.2 195.7" height="17" width="41">
@@ -103,7 +118,6 @@
           <a class="govuk-footer__link govuk-footer__copyright-logo" href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">© Crown copyright</a>
         </div>
       </div>
-    </div>
   </footer>
 
   <script src="/govuk-frontend-4.3.1.min.js"></script>

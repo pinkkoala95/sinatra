@@ -6,7 +6,11 @@ get '/' do
     erb :home
 end
 
-get '/llama' do
-    erb :llama
+get '/info' do
+    erb :info
+end
+
+get '/results' do
+    erb :results
 end
 

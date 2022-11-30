@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>GOV.UK - The best place to find government services and information</title>
+  <title>GOV.UK - Building Information Service</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0b0c0c">
 
@@ -25,23 +25,22 @@
   <![endif]-->
 
   <!--[if lt IE 9]>
-    <script src="public/stylesheets/govuk-frontend-ie8-4.3.1.min.css"></script>
+    <script src="/stylesheets/govuk-frontend-ie8-4.3.1.min.css"></script>
   <![endif]-->
 
 </head>
 
 <body class="govuk-template__body ">
   <script>
-    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+    document.body.className = ((document.body.className) ? document.body.className + "js-enabled" : "js-enabled");
 
   </script>
-
   <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
   <header class="govuk-header " role="banner" data-module="govuk-header">
     <div class="govuk-header__container govuk-width-container">
       <div class="govuk-header__logo">
-        <a href="/" class="govuk-header__link govuk-header__link--homepage">
+        <a href="#" class="govuk-header__link govuk-header__link--homepage">
           <span class="govuk-header__logotype">
             <!--[if gt IE 8]><!-->
             <svg aria-hidden="true" focusable="false" class="govuk-header__logotype-crown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 97" height="30" width="36">
@@ -49,25 +48,57 @@
             </svg>
             <!--<![endif]-->
             <!--[if IE 8]>
-          <img src="/assets/images/govuk-logotype-crown.png" class="govuk-header__logotype-crown-fallback-image" width="36" height="32">
-          <![endif]-->
+            <img src="/assets/images/govuk-logotype-crown.png" class="govuk-header__logotype-crown-fallback-image" width="36" height="32">
+            <![endif]-->
             <span class="govuk-header__logotype-text">
               GOV.UK
             </span>
           </span>
         </a>
       </div>
+      <div class="govuk-header__content">
+        <a href="/" class="govuk-header__link govuk-header__service-name">
+          Building Identification Service
+        </a>
+      </div>
     </div>
   </header>
 
+  <div class="govuk-phase-banner govuk-width-container ">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        alpha
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
   <div class="govuk-width-container ">
     <main class="govuk-main-wrapper " id="main-content" role="main">
-      <h1 class="govuk-heading-xl">Look at the Llamas!</h1>
-      <div><a href='/' ><button class="govuk-button" data-module="govuk-button">
-        Home
-        </button></a></div>
-        <div><img src="https://media.gettyimages.com/id/90092639/photo/two-alpacas.jpg?s=612x612&w=0&k=20&c=xtWjnc9J1h1zX1VwnpAIMVsIBFJWNLlphh8mBd7Vevc=" alt="Two fluffy llamas stood next to each other looking into the distance"></div>
-      
+    <table class="govuk-table">
+    <caption class="govuk-table__caption govuk-table__caption--xl">Buildings within location</caption>
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header">UPRN</th>
+        <th scope="col" class="govuk-table__header">Height</th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">1234</th>
+        <td class="govuk-table__cell">20 metres</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">2345</th>
+        <td class="govuk-table__cell">7 Metres</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">3456</th>
+        <td class="govuk-table__cell">12 Metres</td>
+      </tr>
+    </tbody>
+  </table>
     </main>
   </div>
 
